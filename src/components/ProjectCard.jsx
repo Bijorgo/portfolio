@@ -5,7 +5,6 @@ export default function ProjectCard({ projects }){
     return(
         <div>
             <h1>Hello from the project card</h1>
-            <p>This is where one project will be formatted</p>
 
             <div>
                 {projects.map( project => (
@@ -16,6 +15,9 @@ export default function ProjectCard({ projects }){
                         src= {project.photo || "https://i.imgur.com/uW74V56.jpeg"}
                         alt= {project.alt || "project image"}
                         />
+                        <h4>Title:{project.title}</h4>
+                        <h4>GitHub: {project.url}</h4>
+
                         <Link
                             to={'/details'}
                             >
