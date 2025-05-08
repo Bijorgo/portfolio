@@ -12,6 +12,7 @@ export default function NavBar() {
         <Link to="/projects"> Projects |</Link>
         <Link to="/contact"> Contact Me |</Link>      
         <Link to="/error"> Error |</Link>
+        <Link to="/details"> TEMP </Link>
     </nav>
   );
 };
