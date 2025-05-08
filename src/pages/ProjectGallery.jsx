@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import ProjectCard from "../componenets/ProjectCard";
 
 export default function ProjectGallery(){
-    const [ photos, setPhotos ] = useState([])
+    const [ projects, setProjects ] = useState([])
 
     // Initial GET fetch request
     useEffect(()=> {
@@ -14,7 +14,7 @@ export default function ProjectGallery(){
     return(
         <div>
             <h1>Projects</h1>
-            <ProjectCard photos={photos}/>
+            <ProjectCard projects={projects}/>
         </div>
     )
 }
