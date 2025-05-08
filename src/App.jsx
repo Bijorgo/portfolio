@@ -4,6 +4,8 @@ import './App.css';
 import Home from './pages/Home';
 import Error from './pages/Error';
 import NavBar from './componenets/NavBar';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 //import { BrowserRouter, Routes } from 'react-router'
 
 
@@ -12,10 +14,12 @@ function App() {
 
   return (
     <BrowserRouter>
-      <NavBar />
+      <NavBar /> {/* Display nav bar at top of page*/}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="error" element={<Error />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="error" element={<Error />} /> {/*Change this path to * when complete */}
       </Routes>
     </BrowserRouter>
   )
