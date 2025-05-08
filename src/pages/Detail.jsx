@@ -1,3 +1,5 @@
+import DetailCard from "../componenets/DetailCard";
+
 export default function Detail(){
     return(
         <div>
@@ -6,6 +8,7 @@ export default function Detail(){
                 and provide a demo, description, and link to GitHub.
                 If available, it will also provide a URL to the project
             </p>
+            <DetailCard />
         </div>
     )
 }
