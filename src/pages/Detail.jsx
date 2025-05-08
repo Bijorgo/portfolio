@@ -1,4 +1,4 @@
-import DetailCard from "../componenets/DetailCard";
+import DetailCard from "../components/DetailCard";
 
 export default function Detail(){
     return(

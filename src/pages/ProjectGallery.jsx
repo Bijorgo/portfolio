@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import ProjectCard from "../componenets/ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 
 export default function ProjectGallery(){
     const [ projects, setProjects ] = useState([])
@@ -8,7 +8,8 @@ export default function ProjectGallery(){
     useEffect(()=> {
         fetch("http://localhost:5000/projects")
         .then(r => r.json())
-        .then(error => console.log(error))
+        .then(data => setProjects(data))
+        .catch(error => console.log(error))
     }, [])
 
     return(

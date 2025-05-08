@@ -13,8 +13,8 @@ export default function ProjectCard({ projects }){
                     key={project.id}
                     >
                         <img
-                        src= {project.photo}
-                        alt= {project.alt}
+                        src= {project.photo || "https://i.imgur.com/uW74V56.jpeg"}
+                        alt= {project.alt || "project image"}
                         />
                         <Link
                             to={'/details'}
@@ -24,6 +24,7 @@ export default function ProjectCard({ projects }){
                     </div>
                 ))}
             </div>
+            <p>test</p>
         </div>
     )
 }
