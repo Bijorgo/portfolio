@@ -12,14 +12,13 @@ export default function ProjectCard({ projects }){
                     key={project.id}
                     >
                         <img
-                        src= {project.photo || "https://i.imgur.com/uW74V56.jpeg"}
+                        src= {project.photo}
                         alt= {project.alt || "project image"}
                         />
                         <h4>Title:{project.title}</h4>
-                        <h4>GitHub: {project.url}</h4>
 
                         <Link
-                            to={'/details'}
+                            to={`/details/${project.id}`}
                             >
                                 Details
                         </Link>

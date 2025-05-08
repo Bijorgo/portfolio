@@ -11,7 +11,7 @@ projects = [
         "description": "Create and share playlists.",
         "url": "https://github.com/bijorgo/mixtape-maker",
         "demo": "https://mixtape-maker.netlify.app",
-        "photo": "https://i.imgur.com/lsDKqa6.jpeg",
+        "photo": "https://imgur.com/gallery/placeholder-dev-testing-E9sfInK",
         "alt": "Temp Alt Text"
     },
     {
@@ -20,7 +20,7 @@ projects = [
         "description": "A virtual gardening sim with a Flask API and Pygame frontend.",
         "url": "https://github.com/bijorgo/thyme-to-grow",
         "demo": "https://youtu.be/demo-link",
-        "photo": "https://i.imgur.com/lsDKqa6.jpeg",
+        "photo": "https://i.imgur.com/Mle9pvy.png",
         "alt": "Temp Alt Text"
     },
     {
